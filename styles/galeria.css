@@ -60,36 +60,37 @@ nav li {
 } 
 
 main {
-background-color: aqua;
+
     height: 88vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-family: 'PT Sans', sans-serif;
 
 
 }
 
 .grupo-cartas{
-    background-color: blue;
-    width:100%;
+   
+    width:90%;
     height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    column-gap: 8%;
-    row-gap: 3%;
+    column-gap: 5%;
+    row-gap: 1%;
 
 }
 .card{
-    height:44% ;
+    height:45% ;
     width: 25%;
 }
 .card-body{
-    height: 50%;
+    height: 40%;
     position:relative;
 
 }
@@ -97,16 +98,27 @@ background-color: aqua;
     font-size: 1em;
 }
 .card>img{
-    /* height: 50px; */
-    width: 10em;
+    display:flex;
+    height: 60%;
+ width: 100%;
+    position: relative;
+    z-index: index -1;
 }
-
+.card-text{
+    font-size: .8em;
+    text-align: justify;
+    margin-bottom: 0em;
+}
 .btn {
+    background-color: #588a16;
+    color:antiquewhite;
     position: absolute;
-    bottom: 150px;
+    bottom: 80px;
     right: 5px;
     --bs-btn-padding-x: 0.25rem;
-    --bs-btn-padding-y: 0.25rem;}
+    --bs-btn-padding-y: 0.25rem;
+    --bs-btn-hover-bg: #8cc63e;
+}
 
 footer {
     width: 100vw;
