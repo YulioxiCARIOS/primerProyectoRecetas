@@ -328,6 +328,7 @@ footer>a {
         width: 100%;
     }
     header {
+        width:100%;
         font-size: larger;
     }
 
@@ -345,7 +346,7 @@ footer>a {
     }
 
     main {
-        height: 88vh;
+        height: auto;
         width: 100%;
         font-size: 1.1em;
     }
