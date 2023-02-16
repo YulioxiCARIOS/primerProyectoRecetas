@@ -323,6 +323,10 @@ footer>a {
 /* RESPONSIVE */
 
 @media screen and (min-width:1361px) {
+    body {
+        height: auto;
+        width: 100%;
+    }
     header {
         font-size: larger;
     }
