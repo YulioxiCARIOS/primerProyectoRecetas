@@ -1,23 +1,26 @@
+/* NORMALIZACION */
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-     
+
 }
 
 body {
     width: 100vw;
     height: 100vh;
-    
+
 }
+
 /* ESTILO BARRA DE NAVEGACION */
-header{
+header {
     width: 100vw;
     height: 7vh;
     background-color: #8cc63e;
     font-family: 'Sofia Sans Condensed', sans-serif;
 }
-nav{
+
+nav {
     width: 98%;
     height: 100%;
     margin: 0 1%;
@@ -26,20 +29,23 @@ nav{
     align-items: center;
     color: rgb(243, 232, 219);
 }
-nav img{
-    width:50%;
+
+nav img {
+    width: 50%;
     height: 85%;
     margin-left: 5%;
 }
-.logo{
-    width:30%;
+
+.logo {
+    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-nav ul{
+
+nav ul {
     width: 70%;
     display: flex;
     flex-direction: row;
@@ -47,20 +53,22 @@ nav ul{
     justify-content: flex-end;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: black;
 }
-nav li :hover{
+
+nav li :hover {
     background-color: rgb(243, 232, 219);
     border-radius: 8%;
 }
-nav li { 
+
+nav li {
     display: flex;
-    padding: 1%;    
+    padding: 1%;
     font-size: 1.5em;
-    font-weight:300;
-} 
+    font-weight: 300;
+}
 
 main {
     height: 88vh;
@@ -78,9 +86,8 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    /* padding-top: 3%; */
     font-style: italic;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 .container-flex {
@@ -90,8 +97,8 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin:1% 0;
-    
+    margin: 1% 0;
+
 }
 
 .box {
@@ -127,18 +134,6 @@ main {
     box-shadow: 3px 3px 3px rgba(221, 28, 28, 0.886) inset;
 }
 
-/* .imagen-container {
-    
-    width: 24vw;
-    height:70%;
-    background-color: rgb(230, 218, 218);
-    border-radius: 500px;
-    background-image: url(../multimedia/img/kissi.png);
-    background-size: contain;
-    background-position: center;
-    box-shadow: 3px 3px 3px rgba(221, 28, 28, 0.886) inset;
-} */
-
 .tarjeta-texto {
     width: 24vw;
     height: 97%;
@@ -155,13 +150,14 @@ p {
     padding-top: 2%;
     width: 100%;
     height: 16%;
-    /* font-weight:800; */
-    margin:0 5%;
-    /* font-size: 1em; */
+    margin: 0 5%;
+
 }
-span{
+
+span {
     display: none;
 }
+
 footer {
     width: 100vw;
     height: 5vh;
@@ -171,66 +167,76 @@ footer {
     align-items: center;
     justify-content: center;
     column-gap: 3%;
-   
+
 }
-footer>a{
+
+footer>a {
     font-size: 1.3em;
-    color:rgba(243, 232, 219, 0.9);
-    text-shadow: -5px 1px 2px rgba(0,0,0,0.27);
+    color: rgba(243, 232, 219, 0.9);
+    text-shadow: -5px 1px 2px rgba(0, 0, 0, 0.27);
 
 }
+
+/* RESPONSIVE */
 @media screen and (min-width:1361px) {
-    p{
-  
+    p {
+
         font-size: 15px;
-        line-height: 4vh;  
+        line-height: 4vh;
     }
 }
 
-@media screen and (min-width:640px) and (max-width:1279px){
-    nav li{
+@media screen and (min-width:640px) and (max-width:1279px) {
+    nav li {
         font-size: 1em;
     }
-    footer>a{
+
+    footer>a {
         font-size: 1em;
-        
+
     }
-    .segundaNav{
+
+    .segundaNav {
         font-size: 1em;
     }
-    .box{
+
+    .box {
         height: 60%;
     }
 
-    .boxuno{
+    .boxuno {
         height: 60%;
     }
-    .imagen-cont{
+
+    .imagen-cont {
         height: 60%;
 
     }
-    p{
+
+    p {
         font-size: 10px;
     }
 }
 
-@media screen and (min-width:390px) and (max-width:639px){
+@media screen and (min-width:390px) and (max-width:639px) {
 
-    header{
-        
+    header {
         height: 14vh;
-        
-     }
-     main{
+
+    }
+
+    main {
         height: auto;
-     }
-    nav{
+    }
+
+    nav {
         position: relative;
         display: flex;
         flex-direction: column;
-       
-     }
-     .logo{
+
+    }
+
+    .logo {
         position: absolute;
         display: flex;
         flex-direction: row;
@@ -240,8 +246,9 @@ footer>a{
         height: 40%;
         top: 2vh;
 
-     }
-     nav ul{
+    }
+
+    nav ul {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -251,87 +258,100 @@ footer>a{
         align-items: center;
         margin: 0px;
         top: 3vh;
-     }
-nav li{
-    font-size: 1em;
-    padding: 1vh;
+    }
+
+    nav li {
+        font-size: 1em;
+        padding: 1vh;
 
 
-}
-.segundaNav{
-    height:13% ;
-}
-.container-flex{
-    display: grid;
-    height: auto;
-     row-gap: 1vh;
-    top: 1vh;
+    }
 
+    .segundaNav {
+        height: 13%;
+    }
 
-}
-.tarjeta-texto{
-    width: 100%;
-    
-}
-.box{
-   width: 50vw;
-   height: 14vh;
+    .container-flex {
+        display: grid;
+        height: auto;
+        row-gap: 1vh;
+        top: 1vh;
+
+    }
+
+    .tarjeta-texto {
+        width: 100%;
+
+    }
+
+    .box {
+        width: 50vw;
+        height: 14vh;
+    }
+
+    .boxuno {
+        width: 50vw;
+        height: 14vh;
+    }
+
+    .imagen-cont {
+        width: 50vw;
+        height: 14.5vh;
+
+    }
+
+    p {
+        font-size: 10px;
+        width: 70%;
+        line-height: 2vh;
+    }
 }
 
-.boxuno{
-    width: 50vw;
-    height: 14vh;
-}
-.imagen-cont{
-    width: 50vw;
-    height: 14.5vh;
-
-}
-p{
-    font-size: 10px;
-    width: 70%;
-    line-height: 2vh;
-}
-}
 @media screen and (max-width:389px) {
-  
-    header{
-     flex-direction: column;
-     height: 60vh;
-     width: 100%;
+
+    header {
+        flex-direction: column;
+        height: 60vh;
+        width: 100%;
     }
-    nav{
-     flex-direction: column;
-     justify-content: center;
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
     }
- nav ul{
-     flex-direction: column;
- }
- .logo{
-     flex-direction: row;
-     width: 80%;
-     height: 20%;
-  
- }
- main{
-     height: 15vh;
-     display:none;
-     width: 100%;
+
+    nav ul {
+        flex-direction: column;
     }
-    footer{
-     height: 5vh;
-     width: 100%;
+
+    .logo {
+        flex-direction: row;
+        width: 80%;
+        height: 20%;
+
     }
-    span{
+
+    main {
+        height: 15vh;
+        display: none;
+        width: 100%;
+    }
+
+    footer {
+        height: 5vh;
+        width: 100%;
+    }
+
+    span {
         background-color: rgba(233, 12, 12, 0.61);
-        color:white;
+        color: white;
         visibility: visible;
-        display:flex;
+        display: flex;
         flex-direction: row;
         align-items: center;
         width: 100%;
         height: 20vh;
         text-align: center;
         font-family: 'Sofia Sans Condensed', sans-serif;
-      }
- }
+    }
+}
